@@ -1,3 +1,5 @@
+package com.furui.network.udpjson;
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 

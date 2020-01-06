@@ -1,3 +1,5 @@
+package com.furui.network.udpjson;
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -14,7 +16,7 @@ public class UdpClient {
 		String s = getJsonStr();
 		byte[] buf = s.getBytes();
 		// 将数据打包
-		DatagramPacket packet = new DatagramPacket(buf, buf.length, InetAddress.getByName("192.168.11.139"), 6070);
+		DatagramPacket packet = new DatagramPacket(buf, buf.length, InetAddress.getByName("127.0.0.111"), 6070);
 		socket.send(packet);
 		socket.close();
 
